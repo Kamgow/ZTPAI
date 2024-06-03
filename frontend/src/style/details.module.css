@@ -1,0 +1,223 @@
+.Menu {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+}
+
+.Logo > img {
+    width: 90%;
+}
+
+.Logo {
+    text-align: center;
+    width: 25%;
+}
+
+.Button {
+    border-radius: 20px;
+    width: 100%;
+    height: 5vh;
+    border: unset;
+    line-height: 5vh;
+    background-color: #6D6D6D;
+    color: white;
+    font-size: 3vh;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    text-decoration: none;
+    margin: 0 1vh;
+}
+
+.mediaDetails, .Profile {
+    width: 80%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.mediaHeader{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mediaHeaderText{
+    display: flex;
+    align-items: flex-start;
+}
+
+.mediaTitle {
+    height: 10%;
+}
+
+.mediaHeaderButton{
+    text-align: center;
+}
+
+.mediaHeaderButton > a {
+    flex: 1;
+    margin: 0 1vh;
+    padding: 0.5em;
+    line-height: 6.5vh;
+}
+
+.mediaHeaderButton > .Button {
+    font-size: 2.5vh;
+    width: 100%;
+}
+
+.mediaHeaderText > p {
+    margin: 1em;
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+.mediaMain {
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mediaImageContainer {
+    display: flex;
+    width: 40%;
+}
+
+.mediaImage {
+    border-radius: 1em;
+    width: 20vw;
+    height: 28.5vw;
+}
+
+
+.mediaDesc {
+    flex-direction: column;
+    display: flex;
+    width: 60%;
+    font-size: 2vw;
+}
+
+.H1 {
+    font-size: 4vh;
+    height: 100%;
+}
+
+.profileTitle {
+    display: flex;
+    height: 25%;
+    align-items: flex-start;
+}
+
+.profileTitle > h1 {
+    line-height: 2em;
+    font-size: 8vh;
+}
+
+.Account {
+    height: 65%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.accountData{
+    display: flex;
+    flex-direction: row;
+}
+
+.dataValue {
+    font-size: 3.5vh;
+}
+
+.dataType {
+    font-size: 3.5vh;
+    font-weight: bold;
+}
+
+.accountData > div > p {
+    margin: 1vw;
+}
+
+.accountButtons {
+    display: flex;
+    flex-direction: column;
+}
+
+.accountButtons > a {
+    margin: 1em;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+@media only screen and (max-device-width: 420px) {
+
+    .Logo{
+        width: 100%;
+    }
+
+    .Menu {
+        width: 100%;
+    }
+
+    .Button {
+        font-size: 1.7vh;
+    }
+
+    .mediaHeader {
+        flex-wrap: wrap;
+        height: 20%;
+    }
+
+    .mediaHeaderText {
+        width: 100%;
+    }
+
+    .H1 {
+        font-size: 3vh;
+    }
+
+    .mediaHeaderButton {
+        width: 100%;
+        text-align: left;
+    }
+
+    .mediaMain {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .mediaImage {
+        width: 40vw;
+        height: 57vw;
+    }
+
+    .mediaDesc {
+        font-size: 3.5vw;
+        width: 100%;
+    }
+
+    .profileTitle > h1 {
+        line-height: 3.5em;
+        font-size: 5vh;
+    }
+
+    .Account{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .dataType {
+        font-size: 3vh;
+    }
+
+    .dataValue {
+        font-size: 3vh;
+    }
+
+    .accountButtons > a {
+        margin: 1em 0;
+    }
+}

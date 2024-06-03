@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+}
+
+.baseContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: #EBEAEA;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-family: Roboto;
+    font-style: normal;
+}
+
+.Header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: outset 2.5px black;
+}
+
+.Logo > img {
+    width: 90%;
+}
+
+.Logo {
+    text-align: center;
+    width: 25%;
+}
+
+.A {
+    text-decoration: none;
+}
+
+.Menu > a {
+    flex: 1;
+    margin: 0 1vh;
+}
+
+
+.Button {
+    border-radius: 20px;
+    width: 100%;
+    height: 5vh;
+    border: unset;
+    line-height: 5vh;
+    background-color: #6D6D6D;
+    color: white;
+    font-size: 3vh;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+@media only screen and (max-device-width: 420px) {
+
+    .Header{
+        height: 15%;
+        flex-wrap: wrap;
+    }
+}

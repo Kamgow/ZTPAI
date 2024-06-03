@@ -1,0 +1,161 @@
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+body {
+    margin: 0;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Roboto;
+    font-style: normal;
+}
+
+.Logo {
+    height: 30vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.loginContainer {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formC {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 100%;
+}
+
+.Img {
+    width: 100%;
+}
+
+.Button,.Input {
+    border-radius: 20px;
+    width: 100%;
+    height: 3rem;
+    border: unset;
+    line-height: 2rem;
+}
+
+.Button {
+    background: #F68735;
+    margin: 1em;
+    color: white;
+    font-weight: 600;
+    font-size: 3vh;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.Input {
+    background: #D9D9D9;
+    margin: 0.4em;
+    font-weight: 400;
+    font-size: 2.5vh;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    padding-left: 10px;
+}
+
+.P {
+    color: #6D6D6D;
+    font-size: 1.5vh;
+}
+
+.P > a {
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+
+.noValid {
+    color: red;
+}
+
+.H1 {
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.ButtonB {
+    border-radius: 20px;
+    width: 30%;
+    height: 5vh;
+    border: unset;
+    line-height: 5vh;
+    background-color: #6D6D6D;
+    color: white;
+    font-size: 3vh;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.errorContainer {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.errorContainer > a {
+    text-decoration: none;
+}
+
+@media only screen and (max-device-width: 420px) {
+    .Logo, .loginContainer, .formC{
+        width: 80vw;
+
+    }
+
+    .Logo {
+        height: 25vh;
+    }
+
+    .loginContainer {
+        height: 75vh;
+    }
+
+    .Img {
+        margin: 2em;
+    }
+
+    .Form {
+        margin: auto;
+    }
+
+    .H1 {
+        font-size: 4vh;
+    }
+    .Button{
+        width: 65%;
+    }
+}
