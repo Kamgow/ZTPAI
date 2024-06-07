@@ -1,7 +1,6 @@
 package com.kamilg.watchit.controller;
 
 import com.kamilg.watchit.dto.MediaAdminDto;
-import com.kamilg.watchit.dto.MediaDto;
 import com.kamilg.watchit.service.MediaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -28,6 +27,5 @@ public class MediaAdminController {
         MediaAdminDto updatedMedia = mediaService.editMedia(mediaId, mediaAdminDto);
         return ResponseEntity.ok(updatedMedia);
     }
-
 
 }
